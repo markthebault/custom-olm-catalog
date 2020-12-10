@@ -1,0 +1,10 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: custom-catalog
+  namespace: olm
+spec:
+  sourceType: grpc
+  image: docker.io/markthebault/operators-catalog
+  displayName: Custom Operators
+  publisher: mark-thebault.pro
